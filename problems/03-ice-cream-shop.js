@@ -12,9 +12,20 @@ iceCreamShop(['moose tracks'], 'moose tracks'); // true
 iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
+// 1. Create function, takes in flavors + favorite
+// 2.  Checks if flavors includes favorite
+// 3. Returns a boolean.
+// 4. Checks one flavor at a time vs favorite
+// 5. Return iceCreamShop if flavor isn't favorite
 
 function iceCreamShop(flavors, favorite) {
-  // Your code here
+  let flavor = flavors.pop();
+  if (flavor === favorite) {
+    return true;
+  } else if (flavors.length === 0) {
+    return false;
+  }
+  return iceCreamShop (flavors, favorite)
 }
 
 
