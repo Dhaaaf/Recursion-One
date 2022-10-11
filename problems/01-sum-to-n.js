@@ -14,7 +14,15 @@ sumToN(-8)  // returns null
 
 function sumToN(n) {
   // Your code here
+  if (n <= 0) return null;
+
+  return sumToN(n-1) + n;
+
 }
+// for (let i = 0; i < n; i++) {
+  //   sum += i;
+  // }
+  // return sum;
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
